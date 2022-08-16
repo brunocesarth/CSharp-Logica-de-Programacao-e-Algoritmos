@@ -17,7 +17,7 @@ namespace Aula_Casting
             int c;
             double d;
             c = 5;
-            d = 2 * x;
+            d = 2 * c;
             Console.WriteLine(c);
             Console.WriteLine(d);
 
@@ -43,7 +43,6 @@ namespace Aula_Casting
             f = 5.0;
             g = (int)f;
             Console.WriteLine(g);
-
         }
     }
 }
