@@ -45,32 +45,32 @@ namespace URI_1021
             moeda = 1.00;
             qtdMoedas = quociente / moeda;
             quociente = quociente % moeda;
-            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ " + moeda + ".00");
+            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ 1.00");
 
             moeda = 0.50;
             qtdMoedas = quociente / moeda;
             quociente = quociente % moeda;
-            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ " + moeda.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ 0.50");
 
             moeda = 0.25;
             qtdMoedas = quociente / moeda;
             quociente = quociente % moeda;
-            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ " + moeda.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ 0.25");
 
             moeda = 0.10;
             qtdMoedas = quociente / moeda;
             quociente = quociente % moeda;
-            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ " + moeda.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ 0.10");
 
             moeda = 0.05;
             qtdMoedas = quociente / moeda;
             quociente = quociente % moeda;
-            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ " + moeda.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ 0.05");
 
             moeda = 0.01;
             qtdMoedas = quociente / moeda;
             quociente = quociente % moeda;
-            Console.WriteLine((int)qtdMoedas + " moeda(s) de R$ " + moeda.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine(Math.Round(qtdMoedas) + " moeda(s) de R$ 0.01");
         }
     }
 }
