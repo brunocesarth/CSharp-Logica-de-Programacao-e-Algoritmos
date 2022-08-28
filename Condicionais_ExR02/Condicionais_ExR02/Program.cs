@@ -13,7 +13,7 @@ namespace Condicionais_ExR02 {
             delta = Math.Pow(B, 2.0) - 4 * A * C;
 
             if (A == 0 || delta < 0.0) {
-                Console.WriteLine("Impossível calcular");
+                Console.WriteLine("Impossivel calcular");
             } else {
                 R1 = (-B + Math.Sqrt(delta)) / (2.0 * A);
                 R2 = (-B - Math.Sqrt(delta)) / (2.0 * A);
@@ -21,7 +21,6 @@ namespace Condicionais_ExR02 {
                 Console.WriteLine("R1 = " + R1.ToString("F5", CultureInfo.InvariantCulture));
                 Console.WriteLine("R2 = " + R2.ToString("F5", CultureInfo.InvariantCulture));
             }
-            
         }
     }
 }
