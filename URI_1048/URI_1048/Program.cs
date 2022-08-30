@@ -31,7 +31,7 @@ namespace URI_1048 {
 
             Console.WriteLine("Novo salario: " + novoSalario.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("Reajuste ganho: " + reajuste.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("Em percentual " + percentual + " %");
+            Console.WriteLine("Em percentual: " + percentual + " %");
         }
     }
 }
