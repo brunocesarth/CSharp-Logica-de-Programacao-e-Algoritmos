@@ -12,8 +12,33 @@ namespace URI_1047 {
 
             if (horaInicial == horaFinal && minutoInicial == minutoFinal) {
                 horas = 24;
+            } else if (horaInicial == horaFinal) {
+                if (minutoInicial > minutoFinal) {
+                    minutos = (60 + minutoFinal) - minutoInicial;
+                    horas = 23;
+                } else {
+                    minutos = minutoFinal - minutoInicial;
+                }
             } else if (horaInicial < horaFinal) {
-                tempoTotal = ((horaFinal - horaInicial) * 60) + (minutoFinal - minutoInicial);
+                if (minutoInicial > minutoFinal) {
+                    minutos = minutoFinal - minutoInicial;
+                    tempoTotal = ((horaFinal - horaInicial) * 60) + minutos;
+                } else {
+                    tempoTotal = ((horaFinal - horaInicial) * 60) + (minutoFinal - minutoInicial);
+                }
+                horas = tempoTotal / 60;
+                minutos = tempoTotal % 60;
+            } else if (horaInicial > horaFinal) {
+                if (minutoInicial > minutoFinal) {
+                    minutos = (60 + minutoFinal) - minutoInicial;
+                    tempoTotal = (((23 - horaInicial) + horaFinal)  * 60) + minutos;
+                    horas = tempoTotal / 60;
+                    minutos = tempoTotal % 60;
+                } else {
+                    tempoTotal = (((24 - horaInicial) + horaFinal) * 60) + minutoFinal - minutoInicial;
+                    horas = tempoTotal / 60;
+                    minutos = tempoTotal % 60;
+                }
             }
             Console.WriteLine("O JOGO DUROU " + horas + " HORA(S) E " + minutos + " MINUTO(S)");
         }
