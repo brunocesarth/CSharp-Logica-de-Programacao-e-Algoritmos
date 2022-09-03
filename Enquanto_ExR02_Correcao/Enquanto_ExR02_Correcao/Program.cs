@@ -5,7 +5,7 @@ namespace Enquanto_ExR02_Correcao {
     class Program {
         static void Main(string[] args) {
             double idade, soma, media;
-                int cont;
+            int cont;
 
             idade = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
