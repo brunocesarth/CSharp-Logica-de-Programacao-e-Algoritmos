@@ -5,7 +5,7 @@ namespace URI_1094 {
     class Program {
         static void Main(string[] args) {
             int N, quantia, totalCobaias, ratos, sapos, coelhos;
-            double pctCoelhos, pctSapos, pctRatos;
+            double porcentagemRatos, porcentagemSapos, porcentagemCoelhos;
             char animal;
             string[] vet;
             N = int.Parse(Console.ReadLine());
@@ -31,10 +31,17 @@ namespace URI_1094 {
             }
 
 
+            porcentagemCoelhos = (coelhos * 100.00) / totalCobaias;
+            porcentagemRatos = (ratos * 100.00) / totalCobaias;
+            porcentagemSapos = (sapos * 100.00) / totalCobaias;
+
             Console.WriteLine("Total: " + totalCobaias + " cobaias");
             Console.WriteLine("Total de coelhos: " + coelhos);
             Console.WriteLine("Total de ratos: " + ratos);
             Console.WriteLine("Total de sapos: " + sapos);
+            Console.WriteLine("Percentual de coelhos: " + porcentagemCoelhos.ToString("F2", CultureInfo.InvariantCulture) + " %");
+            Console.WriteLine("Percentual de ratos: " + porcentagemRatos.ToString("F2", CultureInfo.InvariantCulture) + " %");
+            Console.WriteLine("Percentual de sapos: " + porcentagemSapos.ToString("F2", CultureInfo.InvariantCulture) + " %");
         }
     }
 }
