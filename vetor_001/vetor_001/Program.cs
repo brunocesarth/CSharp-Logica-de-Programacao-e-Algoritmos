@@ -17,7 +17,6 @@ namespace vetor_001 {
 
             for (i = 0; i < n; i++) {
                 Console.WriteLine(vet[i].ToString("F1", CultureInfo.InvariantCulture));
-                ;
             }
         }
     }
